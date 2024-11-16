@@ -15,7 +15,7 @@ jobs:
     - name: GitHub Deploy to One.com
       uses: rostimelk/one.com-deployer@master
       env:
-          ONE_DOMAIN_NAME: yourdomainname.com
+          ONE_DOMAIN_NAME: skrybl.net
           ONE_SSH_KEY_PUBLIC: ${{ secrets.PUBLIC }}
           ONE_SSH_KEY_PRIVATE: ${{ secrets.PRIVATE }}
           TPO_SRC_PATH: ""
