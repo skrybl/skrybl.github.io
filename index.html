@@ -8,12 +8,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet">
 
-    
+
     <style>
       body {font-family:"Share Tech Mono",monospace;font-weight:400;font-style:normal;background-color:#1B4965;color:#caf0f8;text-align:center;}
       div {margin: auto;width: 50%;padding: 10px;}
-      @keyframes rotation {from {transform: rotate(0deg);} to {transform: rotate(359deg);}}
-      .rotate {animation: rotation 2s infinite linear;}
+      @keyframes rotation {
+      0% {  position: absolute;top: 50%;left: 25%;transform: translate(-50%, -50%);}
+      50%{  position: absolute;top: 50%;left: 75%;transform: translate(-50%, -50%) rotate(360deg);}
+      100% {  position: absolute;top: 50%;left: 25%;transform: translate(-50%, -50%);}
+      }
+      .rotate {animation: rotation 5s infinite; animation-timing-function:cubic-bezier(-1,-1,0,0)} */
+
     </style>
   </head>
 
@@ -25,6 +30,6 @@
     <div>
       <h2>we have cool things here like...<br>fuck its empty, guess you'll have to check it out later :p</h2>
     </div>
-    <img src="https://angusnicneven.com/images/With_Wilbells_will_why_waste_whit_worrying.gif" style="rotate">
+    <img src="https://57f.ju.mp/assets/images/gallery07/c1a11951_original.jpg?v=a6d16dd6" class="rotate" width=250height=250>
   </body>
 </html>
