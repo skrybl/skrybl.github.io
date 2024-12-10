@@ -1,6 +1,6 @@
-import * as THREE from 'three';
-import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
-import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader.js';
+import * as THREE from './example/three.js';
+import { OBJLoader } from './three/examples/jsm/loaders/OBJLoader.js';
+import { MTLLoader } from './modules/three/examples/jsm/loaders/MTLLoader.js';
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.1, 1000 );
